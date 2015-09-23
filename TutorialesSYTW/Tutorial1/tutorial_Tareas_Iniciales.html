@@ -1,0 +1,59 @@
+<h1 id="tutorial-tareas-iniciales-sistemas-y-tecnologias-web"><strong>TUTORIAL : TAREAS INICIALES (Sistemas y Tecnologias Web)</strong></h1>
+<h1 id="instalaciones">Instalaciones</h1>
+<h3 id="instalacion-de-node.js-y-express-en-linux"><em>- Instalacion de Node.JS y Express (en linux)</em></h3>
+<p>Comenzaremos este tutorial con la instalacion de <strong><em>Node.js</em></strong>, para ello abrimos una terminal y escribimos lo siguiente:</p>
+<ol class="incremental" style="list-style-type: decimal">
+<li><p>Primero instalaremos el PPA con el fin de obtener acceso a su contenido, para ello ejecutamos: $ curl -sL https: // deb.nodesource.com/setup | sudo bash -</p></li>
+<li><p>Despues de ejecutar el script de configuracion de nodesource, instalamos el paquete <strong><em>Node.js</em></strong> ejecutando: $ apt-get install nodejs</p>
+<div class="figure">
+<img src="Imagenes/ImagenesCorrectas/imagen1.png" alt="imagen1" />
+<p class="caption">imagen1</p>
+</div></li>
+<li><p>A continuacion instalamos <strong><em>express</em></strong>, para ello ejecutamos: <strong><em>npm install express</em></strong> el cual nos generará el siguiente directorio dentro de <em>node_modules</em>.</p>
+<div class="figure">
+<img src="Imagenes/ImagenesCorrectas/imagen2.png" alt="imagen2" />
+<p class="caption">imagen2</p>
+</div></li>
+</ol>
+<p>Una vez tengamos todo esto instalado podemos pasar al siguiente punto (intalacion de git)</p>
+<h3 id="instalacion-y-configuracion-de-git-en-linux"><em>- Instalacion y Configuracion de Git (en linux)</em></h3>
+<p>Para instalar <strong><em>Git</em></strong> tenemos que volver a abrir una terminal y ejecutar el comando:</p>
+<pre><code>$ apt-get install git</code></pre>
+<p>A continuacion configuramos Git (nombre de usuario y dirección de correo), para ello ejecutamos:</p>
+<pre><code>1. $ git config --global user.name &quot;(nombre de usuario)&quot;
+2. $ git config --global user.email (dirección de email)</code></pre>
+<p>Una vez configurado el nombre y la dirección toca configurar la herramienta de diferencias por defecto, usada para resolver conflictos de union (merge). Para ello ejecutamos</p>
+<pre><code>3. $ git config --global merge.tool vimdiff</code></pre>
+<p>A continuacion abrimos una cuenta en <strong><em>GitHub</em></strong>.</p>
+<div class="figure">
+<img src="Imagenes/ImagenesCorrectas/imagen3.png" alt="imagen3" />
+<p class="caption">imagen3</p>
+</div>
+<p>Una vez abierta la cuenta tenemos que establecer conexion entre nuestro ordenador y el servidor de Git. Para ello tenemos que generar una clave .ssh, para ello ejecuatamos el comando:</p>
+<pre><code>$ ssh-keygen</code></pre>
+<p>la consola nos dira donde donde donde queremos que se guarde (lo dejare en la configuracion prederterminada).</p>
+<p>Lo siguiente que nos pedira es una contraseña -passphrase- (la contraseña es opcional.)</p>
+<p>Para leer la clave ssh ejecutaremos:</p>
+<pre><code>$ cat ~/.ssh/id_rsa.pub</code></pre>
+<div class="figure">
+<img src="Imagenes/ImagenesCorrectas/imagen4.png" alt="imagen4" />
+<p class="caption">imagen4</p>
+</div>
+<p>luego copiamos la contraseña y lo pegaremos en <strong><em>SSH Keys en GitHub</em></strong></p>
+<div class="figure">
+<img src="Imagenes/ImagenesCorrectas/imagen5.png" alt="imagen5" />
+<p class="caption">imagen5</p>
+</div>
+<p>### <em>- Instalacion de PanDoc</em> Para instalar <strong><em>PanDoc</em></strong> simplemente ejecutamos:</p>
+<pre><code>$ apt-get install pandoc</code></pre>
+<div class="figure">
+<img src="Imagenes/ImagenesCorrectas/imagen6.png" alt="imagen6" />
+<p class="caption">imagen6</p>
+</div>
+<p>Una vez instalado podemos convertir un fichero <em>Markdown (extendido o estricto)</em> a formatos como: + HTML + LaTeX + RTF + OpenDocument XML, etc.</p>
+<p>Para ello tendremos que ejecutar:</p>
+<pre><code>$ pandoc -o archivo-de-salida.ext -i archivo-original.md</code></pre>
+<hr />
+<blockquote>
+<p>Enlace g+ : <em>alu0100498820@ull.edu.es</em></p>
+</blockquote>
