@@ -118,30 +118,15 @@
         <div id="contac">
 <!-- -->
 
-            <form action="enviar.php" method="post">
-                 <table id="formulario" align="center">
-                   <tr id="formulario">
-                     <td id="formulario">Nombre:</td>
-                     <td><input type="text" name="nombre" placeholder="Escribe tu nombre" required></td>
-                   </tr>
-
-                    <tr>
-                      <td id="formulario">E-mail:</td>
-                      <td id="formulario"><input type="email" name="correo" placeholder="Escribe tu correo" required></td>
-                    </tr>
-
-                    <tr>
-                      <td id="formulario">Su mensaje:</td>
-                      <td><textarea cols="17" rows="6" name="contenido" placeholder="Escribe Tu mensaje" required></textarea></td>
-                    </tr>
-
-                    <tr>
-                      <td>&nbsp;</td>
-                      <td id="formulario"><input id="boton" type="submit" name="boton" value="Enviar mensaje"></td>
-                    </tr>
-
-                 </table>
-            </form>
+          <form action="enviar.php" method="post">
+           <label for="nombre">Nombre:</label>
+           <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required="" />
+           <label for="email">Email:</label>
+           <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
+           <label for="mensaje">Mensaje:</label>
+           <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
+           <input id="submit" type="submit" name="submit" value="Enviar" />
+          </form>
 <!-- -->
 
         </div>
