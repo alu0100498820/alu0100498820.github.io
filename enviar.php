@@ -1,19 +1,23 @@
 <?php
-  $nombre = $_POST['nombre'];
-  $email = $_POST['email'];
-  $mensaje = $_POST['mensaje'];
-  $para = 'bbarvil@gmail.com';
-  $titulo = 'ASUNTO DEL MENSAJE';
-  $header = 'From: ' . $email;
-  $msjCorreo = "Nombre: $nombre\n E-Mail: $email\n Mensaje:\n $mensaje";
 
-  if ($_POST['submit']) {
-    if (mail($para, $titulo, $msjCorreo, $header)) {
-        echo "<script language='javascript'>
-          alert('Mensaje enviado, muchas gracias.');
-        </script>";
-    } else {
-      echo 'Falló el envio';
-     }
-  }
+ $nombre = $_POST["nombre"];
+
+ $correo = $_POST["correo"];
+
+ $contenido = $_POST["contenido"];
+
+ $para = "bbarvil@gmail.com";
+ $asunto = "Nuevo Mensaje de $nombre";
+
+ $mensaje = "
+
+ Nombre del remitente: ".$nombre."
+ Correo: ".$correo."
+ Mensaje: ".$contenido."
+ ";
+
+ mail($para,$asunto,utf8_decode($mensaje));
+
+ echo "<p><h2>Hemos recibido tu mensaje correctamente, pronto te contestaremos, gracias.</h2></p>";
+
 ?>
