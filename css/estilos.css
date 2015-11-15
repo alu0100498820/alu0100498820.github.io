@@ -107,35 +107,46 @@ th {
 }
 /*--------------------------------------------------------------------------*/
 /*Contacto*/
-#contac{
-  position:absolute;
-  top:50%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: -100px;
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
 }
-#table_contac{
-  border: 0;
-  border-collapse: collapse;
-  margin:auto;
+.formulario {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: #666666;
+    font-family:Arial;
 }
-
-/*----------------------*/
-/*
-#contenedor{
-  overflow: hidden;
-  width: 100%;
+form {
+    margin:0 auto;
+    width:400px;
 }
 
-#reloj{
-    float: left;
-     width: 30%;
+input, textarea {
+    width:380px;
+    height:27px;
+    background:white;
+    border:3px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:10px;
+    color:#ffffff;
 }
-#rss{
-    float: right;
-     width: 70%;
+
+textarea {
+    height:150px;
 }
-*/
+
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    background:#666666;
+    cursor:pointer;
+}
 
 
 

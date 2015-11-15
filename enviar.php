@@ -1,11 +1,19 @@
 <?php
-//Recibimos los campos del formulario
-$nombre=$_POST[nombre];
-$correo=$_POST[email];
-$mensaje=$_POST[mensaje];
-//Acomodamos todo para darle orden al cuerpo del mensaje
-$texto_mensaje="El usuario ".$nombre." dijo: \n".$mensaje." \n
-Puedes contactarlo a su correo: ".$correo;
-mail("bbarvil@gmail.com",$texto_mensaje);
-echo "Su mensaje se ha enviado! Nos pondremos en contacto contigo.";
+  $nombre = $_POST['nombre'];
+  $email = $_POST['email'];
+  $mensaje = $_POST['mensaje'];
+  $para = 'bbarvil@gmail.com';
+  $titulo = 'ASUNTO DEL MENSAJE';
+  $header = 'From: ' . $email;
+  $msjCorreo = "Nombre: $nombre\n E-Mail: $email\n Mensaje:\n $mensaje";
+
+  if ($_POST['submit']) {
+    if (mail($para, $titulo, $msjCorreo, $header)) {
+        echo "<script language='javascript'>
+          alert('Mensaje enviado, muchas gracias.');
+        </script>";
+    } else {
+      echo 'Falló el envio';
+     }
+  }
 ?>

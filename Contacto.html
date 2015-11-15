@@ -114,56 +114,19 @@
         <br>
         <h4>Borja Barrera Villagrasa</h4>
         <h5>Email: alu0100498820@ull.edu.es</h5>
-                  <br><br><br><br>
+
         <div id="contac">
 <!-- -->
 
-          <script>
-          function Verificar() {
-          	if(document.frm.nombre.value == "") {
-          		alert("Por favor indica un Nombre");
-          		document.frm.nombre.focus();
-          		return false;
-          	}
-
-          	if(document.frm.email.value == "") {
-          		alert("Por favor indica un E-Mail");
-          		document.frm.email.focus();
-          		return false;
-          	}
-
-          	if(document.frm.mensaje.value == "") {
-          		alert("Por favor indica un Mensaje");
-          		document.frm.mensaje.focus();
-          		return false;
-          	}
-
-          	return true;
-          }
-          </script>
-
-    	    <form method="post" action="enviar.php" name="frm" onSubmit="return Verificar()">
-
-        	    <input type="hidden" name="id" value="">
-
-              <table id="table_contac">
-        	      <tr>
-                		<td id="table_contac"><b>Nombre:</b></td>
-                		<td id="table_contac"><input type="text" name="nombre" size="33" maxlength="40"></td>
-        	      </tr>
-        	      <tr>
-                		<td id="table_contac"><b>E-Mail:</b></td>
-                		<td id="table_contac"><input type="text" name="email" size="33"></td>
-        	      </tr>
-        	    </table>
-              <br>
-
-        	    <b>Mensaje</b><br>
-        	    <textarea name="mensaje" cols="45" rows="5"></textarea><br><br>
-
-        	    <input type="submit" value="     Enviar     "> &nbsp; &nbsp;
-        	    <input type="reset" value="     Borrar     ">
-    	    </form>
+          <form action="enviar.php" method="post">
+           <label for="nombre">Nombre:</label>
+           <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required="" />
+           <label for="email">Email:</label>
+           <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
+           <label for="mensaje">Mensaje:</label>
+           <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
+           <input id="submit" type="submit" name="submit" value="Enviar" />
+          </form>
 <!-- -->
 
         </div>
