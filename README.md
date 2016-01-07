@@ -16,6 +16,11 @@
     - Asignatura: *Sistemas y Tecnologías web*
     - Realizado en colaboración con José Alberto Mena García
 
+  - Proyecto  <a title="logo" href="http://alu0100498820.github.io/SYTW_TF.html"><img src="https://camo.githubusercontent.com/5a97eb3e1c5fd41ef568647709f7f3b973feff41/687474703a2f2f737461746963312e73717561726573706163652e636f6d2f7374617469632f3532666134326531653462303934393465316666646531332f3533393666623738653462303238633235623533653265322f3534663430376366653462303365336431316634643233372f313434323832363735313732342f3f666f726d61743d35303077" alt="logo" width='55' height='30' /></a>
+      - Asignatura: *Sistemas y Tecnologías web*
+      - Realizado en colaboración con José Alberto Mena García
+      - Realizado en colaboración con Gonzalo García León
+
   - Fabrik <a title="logo" href="http://alu0100498820.github.io/ROB_TF.html"><img src="http://cdn.flaticon.com/png/256/3798.png" alt="logo" width='30' height='30' /></a>
     - Asignatura: *Robótica Computacional*
     - Realizado en colaboración con Jorge Octavio Blanchard Cruz
